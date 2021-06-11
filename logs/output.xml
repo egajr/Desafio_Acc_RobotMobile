@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.5 on win32)" generated="20210611 17:12:11.114" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\ederg\Documents\Projetos\Desafio_Acc_RobotMobile\tests">
+<suite id="s1-s1" name="Testando" source="C:\Users\ederg\Documents\Projetos\Desafio_Acc_RobotMobile\tests\testando.robot">
+<test id="s1-s1-t1" name="Teste abrir app Sky">
+<kw name="Dado que acesse o app da SKY" library="keywords">
+<kw name="Abrir o App Sky" library="base">
+<kw name="Provisionar App" library="base">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${URL}</arg>
+<arg>platformName=${PLATAFORMA}</arg>
+<arg>app=${APP}</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20210611 17:12:11.339" endtime="20210611 17:12:28.488"/>
+</kw>
+<status status="PASS" starttime="20210611 17:12:11.338" endtime="20210611 17:12:28.489"/>
+</kw>
+<status status="PASS" starttime="20210611 17:12:11.338" endtime="20210611 17:12:28.489"/>
+</kw>
+<kw name="Acessar home do app" library="quizze_app">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=2131427869</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20210611 17:12:28.490" endtime="20210611 17:12:31.960"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=2131427869</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210611 17:12:31.963" level="INFO">Clicking element 'id=2131427869'.</msg>
+<status status="PASS" starttime="20210611 17:12:31.960" endtime="20210611 17:12:32.058"/>
+</kw>
+<status status="PASS" starttime="20210611 17:12:28.489" endtime="20210611 17:12:32.059"/>
+</kw>
+<status status="PASS" starttime="20210611 17:12:11.337" endtime="20210611 17:12:32.059"/>
+</kw>
+<kw name="Quando eu acessar a sessão de Destaques" library="keywords">
+<kw name="Acessar a sessão de destaques" library="home_app">
+<kw name="Click A Point" library="AppiumLibrary">
+<arg>50</arg>
+<arg>50</arg>
+<doc>Click on a point</doc>
+<msg timestamp="20210611 17:12:32.064" level="INFO">Clicking on a point (50,50).</msg>
+<status status="PASS" starttime="20210611 17:12:32.061" endtime="20210611 17:12:34.090"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.widget.TextView[@text='Destaques']</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20210611 17:12:34.090" endtime="20210611 17:12:34.314"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.TextView[@text='Destaques']</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210611 17:12:34.316" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Destaques']'.</msg>
+<status status="PASS" starttime="20210611 17:12:34.314" endtime="20210611 17:12:34.589"/>
+</kw>
+<status status="PASS" starttime="20210611 17:12:32.061" endtime="20210611 17:12:34.589"/>
+</kw>
+<status status="PASS" starttime="20210611 17:12:32.060" endtime="20210611 17:12:34.589"/>
+</kw>
+<kw name="E clicar no botão de like" library="keywords">
+<kw name="Clicar no botão curtir" library="destaques_app">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=2131428597</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20210611 17:12:34.592" endtime="20210611 17:12:35.896"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=2131428597</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210611 17:12:35.899" level="INFO">Clicking element 'id=2131428597'.</msg>
+<status status="PASS" starttime="20210611 17:12:35.896" endtime="20210611 17:12:35.986"/>
+</kw>
+<status status="PASS" starttime="20210611 17:12:34.591" endtime="20210611 17:12:35.986"/>
+</kw>
+<status status="PASS" starttime="20210611 17:12:34.590" endtime="20210611 17:12:35.987"/>
+</kw>
+<kw name="E clicar no botão Logar" library="keywords">
+<kw name="Clicar em logar" library="destaques_app">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=2131427855</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20210611 17:12:35.989" endtime="20210611 17:12:36.559"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@text="LOGAR"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210611 17:12:36.561" level="INFO">Clicking element 'xpath=//android.widget.Button[@text="LOGAR"]'.</msg>
+<status status="PASS" starttime="20210611 17:12:36.559" endtime="20210611 17:12:36.692"/>
+</kw>
+<status status="PASS" starttime="20210611 17:12:35.988" endtime="20210611 17:12:36.693"/>
+</kw>
+<status status="PASS" starttime="20210611 17:12:35.987" endtime="20210611 17:12:36.693"/>
+</kw>
+<kw name="Então devo ser direcionado para tela de login do app" library="keywords">
+<kw name="Validar tela de login" library="login_app">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=2131428529</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20210611 17:12:36.695" endtime="20210611 17:12:37.605"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>Digite seu CPF/CNPJ</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20210611 17:12:37.667" level="INFO">Current page contains text 'Digite seu CPF/CNPJ'.</msg>
+<status status="PASS" starttime="20210611 17:12:37.606" endtime="20210611 17:12:37.668"/>
+</kw>
+<status status="PASS" starttime="20210611 17:12:36.695" endtime="20210611 17:12:37.668"/>
+</kw>
+<status status="PASS" starttime="20210611 17:12:36.694" endtime="20210611 17:12:37.668"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20210611 17:12:37.669" endtime="20210611 17:12:38.823"/>
+</kw>
+<status status="PASS" starttime="20210611 17:12:11.336" endtime="20210611 17:12:38.823"/>
+</test>
+<status status="PASS" starttime="20210611 17:12:11.145" endtime="20210611 17:12:38.826"/>
+</suite>
+<status status="PASS" starttime="20210611 17:12:11.117" endtime="20210611 17:12:38.829"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Testando">Tests.Testando</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
